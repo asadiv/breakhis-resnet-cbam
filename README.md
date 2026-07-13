@@ -95,7 +95,6 @@ than staying frozen at ImageNet features, so I went back to unfreezing
 everything after the warmup phase, same as the baseline.
 
 ## Results
-
 Both models: ResNet50 (ImageNet-pretrained), warmup for 4 epochs (head +
 CBAM, if present, only), then full fine-tuning for the rest,
 Adam with weight decay `1e-4`, `lr=3e-5`, class-weighted loss,
@@ -122,8 +121,22 @@ test numbers on a small, patient-grouped test set (16 patients, 1706
 images), not a cross-validated estimate.
 
 ## Resnet50 + CBAM
+- loss curve
+- <img width="711" height="488" alt="image" src="https://github.com/user-attachments/assets/78f8a528-d9ec-4638-be14-48094b28d9dc" />
+- Accuracy curve
+- <img width="710" height="478" alt="image" src="https://github.com/user-attachments/assets/9d6703ee-10de-4186-a289-3538403b4267" />
+- confusion matrix
+- <img width="577" height="436" alt="image" src="https://github.com/user-attachments/assets/fe175a96-a51e-4f89-98b4-e1c516ca64fe" />
+
 
 ## Resnet50
+- loss curve
+- <img width="694" height="467" alt="image" src="https://github.com/user-attachments/assets/ea0cb12b-ab97-45b7-b04b-a3fa3eb6b379" />
+- accuracy curve
+- <img width="701" height="474" alt="image" src="https://github.com/user-attachments/assets/ce46d419-2286-4ebf-86fd-3decb0150201" />
+- confusion matrix
+- <img width="568" height="430" alt="image" src="https://github.com/user-attachments/assets/299a0fcd-fbed-44d0-8771-b4cb7064fb73" />
+
 
 ## Repo structure
 
